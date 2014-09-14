@@ -1,0 +1,41 @@
+{
+  "name": "sails-generate-authentication-api",
+  "version": "0.10.0",
+  "description": "Sails.js generator for the sails-authentication module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "authentication-api",
+    "auth",
+    "passport",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "Travis Webb <me@traviswebb.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sailsGenerator": {
+    "type": "authentication-api",
+    "behavior": "`sails generate authentication-api`",
+    "sailsVersion": "~0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjwebb/sails-generate-authentication-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tjwebb/sails-generate-authentication-api/issues"
+  },
+  "homepage": "https://github.com/tjwebb/sails-generate-authentication-api"
+}
