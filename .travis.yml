@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.11'
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: me@traviswebb.com
+  api_key:
+    secure: iz8sfFNjsq07GtyV+szkTiK24IxrEP4xPLugXic0mRefS/1TJc97pHAPvyCMX1SsDry+pvqHE+2PZgdVVQD9VOnAgKay3v79YKdbXcOaGe+9li0HAsRCMZz11vpUEGkI0YZSX7ZcxG+o0PaI6uDSKMvEbPeWMumaF7bJjaDXVXU=
+  on:
+    tags: true
+    repo: tjwebb/sails-generate-entities
+    all_branches: true

@@ -1,13 +1,13 @@
 {
-  "name": "sails-generate-authentication-api",
+  "name": "sails-generate-entities",
   "version": "0.10.0",
-  "description": "Sails.js generator for the sails-authentication module",
+  "description": "Sails.js generator for arbitrary entities",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
   "keywords": [
-    "authentication-api",
+    "entities",
     "auth",
     "passport",
     "generator",
@@ -26,16 +26,16 @@
     "fs-extra": "*"
   },
   "sailsGenerator": {
-    "type": "authentication-api",
-    "behavior": "`sails generate authentication-api`",
+    "type": "entities",
+    "behavior": "`sails generate entities`",
     "sailsVersion": "~0.10.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tjwebb/sails-generate-authentication-api.git"
+    "url": "git://github.com/tjwebb/sails-generate-entities.git"
   },
   "bugs": {
-    "url": "https://github.com/tjwebb/sails-generate-authentication-api/issues"
+    "url": "https://github.com/tjwebb/sails-generate-entities/issues"
   },
-  "homepage": "https://github.com/tjwebb/sails-generate-authentication-api"
+  "homepage": "https://github.com/tjwebb/sails-generate-entities"
 }
