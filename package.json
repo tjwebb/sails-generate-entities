@@ -7,11 +7,12 @@
     "test": "mocha --reporter spec"
   },
   "keywords": [
-    "entities",
+    "sails",
+    "sails.js",
     "auth",
     "passport",
     "generator",
-    "sails",
+    "entities",
     "generate",
     "plugin"
   ],
@@ -21,9 +22,7 @@
     "lodash": "^2.4.1"
   },
   "devDependencies": {
-    "sails-generate": "*",
-    "reportback": "*",
-    "fs-extra": "*"
+    "mocha": "^1.21.4"
   },
   "sailsGenerator": {
     "type": "entities",
