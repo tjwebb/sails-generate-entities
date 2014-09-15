@@ -1,0 +1,28 @@
+// <%= keyPath %>
+<%
+  var modulePath = keyPath.split(".js")[0];
+  var entityName = (keyPath.indexOf("api") === 0 ? keyPath.split("/")[2] : keyPath).split(".js")[0];
+%>
+var _ = require('lodash');
+var _super = require('<%= module %>/<%= modulePath %>');
+
+function <%= entityName %> () { }
+
+<%= entityName %>.prototype = Object.create(_super);
+_.extend(<%= entityName %>.prototype, {
+
+  // Extend with custom logic here by adding additional fields and methods,
+  // and/or overriding methods in the superclass.
+
+  /**
+   * For example:
+   *
+   * foo: function (bar) {
+   *   bar.x = 1;
+   *   bar.y = 2;
+   *   return _super.foo.call(this, bar);
+   * }
+   */
+});
+
+module.exports = new <%= entityName %>();

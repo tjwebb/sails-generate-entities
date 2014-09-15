@@ -10,9 +10,14 @@ module.exports = function (options) {
       next();
     },
 
-    targets: _.object(options.entities, _.map(options.entities, function (entity) {
-      return { template: 'entity.template.js' };
-    })),
+    targets: _.extend(
+      _.object(options.statics, _.map(options.statics, function (entity) {
+        return { template: 'static.template.ejs' };
+      })),
+      _.object(options.classes, _.map(options.classes, function (entity) {
+        return { template: 'class.template.ejs' };
+      }))
+    ),
 
     templatesDirectory: require('path').resolve(__dirname, './templates')
   };
