@@ -13,6 +13,9 @@ describe('sails-generate-entities', function () {
       ],
       statics: [
         'api/models/Passport.js'
+      ],
+      functions: [
+        'api/hooks/permissions-api/index.js'
       ]
     });
 
@@ -28,6 +31,9 @@ describe('sails-generate-entities', function () {
     });
     it('service should use class template', function () {
       assert(generator.targets['api/services/passport.js'].template = 'class.template.js');
+    });
+    it('hook should use function template', function () {
+      assert(generator.targets['api/hooks/permissions-api/index.js'].template = 'function.template.js');
     });
   });
 });
