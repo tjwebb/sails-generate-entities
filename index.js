@@ -1,3 +1,4 @@
+var path = require('path');
 var _ = require('lodash');
 
 module.exports = function (options) {
@@ -20,6 +21,11 @@ module.exports = function (options) {
       _.object(options.functions, _.map(options.functions, function (entity) {
         return { template: 'function.template.ejs' };
       }))
+      /*
+      _.object(options.files, _.map(options.files, function (file) {
+        return { copy: path.resolve(path.dirname(module.parent.filename), file) }
+      }))
+      */
     ),
 
     templatesDirectory: require('path').resolve(__dirname, './templates')
