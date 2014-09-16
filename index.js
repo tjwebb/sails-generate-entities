@@ -16,6 +16,9 @@ module.exports = function (options) {
       })),
       _.object(options.classes, _.map(options.classes, function (entity) {
         return { template: 'class.template.ejs' };
+      })),
+      _.object(options.functions, _.map(options.classes, function (entity) {
+        return { template: 'function.template.ejs' };
       }))
     ),
 
