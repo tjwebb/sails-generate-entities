@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-entities",
-  "version": "0.10.8",
+  "version": "0.11.0",
   "description": "Sails.js generator for arbitrary entities",
   "main": "index.js",
   "scripts": {
@@ -14,12 +14,14 @@
     "generator",
     "entities",
     "generate",
-    "plugin"
+    "plugin",
+    "module",
+    "extension"
   ],
   "author": "Travis Webb <me@traviswebb.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^2.4.1"
+    "lodash": "^3.2"
   },
   "devDependencies": {
     "mocha": "^1.21.4"
@@ -27,7 +29,7 @@
   "sailsGenerator": {
     "type": "entities",
     "behavior": "`sails generate entities`",
-    "sailsVersion": "~0.10.0"
+    "sailsVersion": ">=0.10.0"
   },
   "repository": {
     "type": "git",
