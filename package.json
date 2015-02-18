@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-entities",
-  "version": "0.11.2",
+  "version": "0.11.3",
   "description": "Sails.js generator for arbitrary entities",
   "main": "index.js",
   "scripts": {
